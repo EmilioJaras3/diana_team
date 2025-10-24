@@ -1,13 +1,11 @@
 public class subtitulo {
-    String Texto;
+    String texto;
     Double tiempo;
-     subtitulo siguiente;
-
 
      public subtitulo(String Texto, Double tiempo) {
-         this.Texto = Texto;
+         this.texto = texto;
          this.tiempo = tiempo;
-         this.siguiente= null;
+
 
 
      }

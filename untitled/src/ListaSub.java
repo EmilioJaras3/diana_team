@@ -1,20 +1,37 @@
+import java.util.LinkedList;
+import java.util.List;
+
+
 public class ListaSub {
-    private subtitulo inicio;
+    private List<subtitulo> guardarSub;
 
-public ListaSub() {
-    this.inicio=null;
+    public  ListaSub(){
+        guardarSub = new LinkedList<>();
 
-}
-public void listaSub(String texto, double tiempo){
-    subtitulo nuevoSub = new subtitulo(texto,tiempo);
-
-
-    if(inicio==null || tiempo < inicio.tiempo){
-            nuevoSub.siguiente = inicio;
-            inicio=nuevoSub;
-            return;
     }
-}
+
+    public void insertarSub(String texto, Double tiempo) {
+        subtitulo nuevoSub=new subtitulo(texto,tiempo);
+
+
+    for(int i=0; i<guardarSub.size(); i++){
+        subtitulo subActual=guardarSub.get(i);
+
+        if (nuevoSub.tiempo<subActual.tiempo){
+            guardarSub.add(i,nuevoSub);
+            System.out.println("Insertando subtitulo" + i);
+            return;
+        }
+    }
+    guardarSub.add(nuevoSub);
+    System.out.println("Insertando en el final");
 
 
 }
+}
+
+
+
+
+
+
