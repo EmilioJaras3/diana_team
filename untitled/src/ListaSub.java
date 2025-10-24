@@ -28,7 +28,18 @@ public class ListaSub {
 
 
 }
+public void eliminarSub(int indice ){
+        if (indice >= 0 && indice <= guardarSub.size()){
+    subtitulo eliminadi = guardarSub.remove(indice);
+            System.out.println("<- Subtitulo eliminado en el indice [" + indice + "]: " + eliminadi.texto );
+
+} else {
+        System.out.println("Error el índice " + indice + " no es válido");
+    }
 }
+}
+
+
 
 
 
