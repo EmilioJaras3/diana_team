@@ -7,7 +7,7 @@ public class Main {
         ListaSub editor=new ListaSub();
 
         Scanner sc = new Scanner(System.in);
-
+        Scanner sc2 = new Scanner(System.in);
         while (true) {
          System.out.println("Editor de Subtitulos");
          System.out.println("1. Insertar subtitulo");
