@@ -50,6 +50,15 @@ public void eliminarSub(int indice ){
 } else {
         System.out.println("Error el índice " + indice + " no es válido");
     }
+
+}
+public void mostrarSub() {
+    for (int i = 0; i < guardarSub.size(); i++) {
+        subtitulo subActual = guardarSub.get(i);
+        System.out.println("mostar subtitulos " + subActual.texto + " tiempo " + subActual.tiempo);
+
+    }
+
 }
 }
 
