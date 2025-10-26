@@ -21,7 +21,7 @@ public class Main {
         switch (opcion) {
             case 1:
          System.out.println("Escribe el subtitulo");
-         String texto = sc2.next();
+         String texto = sc2.nextLine();
 
          System.out.println("Escribe el tiempo, ej [10.5]");
          double tiempo = sc.nextDouble();
