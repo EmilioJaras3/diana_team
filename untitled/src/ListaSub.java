@@ -33,7 +33,7 @@ public class ListaSub {
         else {
             for (int i = 0; i < guardarSub.size(); i++) {
                 subtitulo subActual = guardarSub.get(i);
-                System.out.println("  Indice " + i + ": " + subActual);
+                System.out.println("  subtitulo " + i + ": " + subActual.tiempo +"s - " + subActual.texto);
             }
 
 

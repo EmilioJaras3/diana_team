@@ -1,4 +1,4 @@
-import java.lang.runtime.SwitchBootstraps;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class Main {
         switch (opcion) {
             case 1:
          System.out.println("Escribe el subtitulo");
-         String texto = sc.next();
+         String texto = sc2.next();
 
          System.out.println("Escribe el tiempo, ej [10.5]");
          double tiempo = sc.nextDouble();

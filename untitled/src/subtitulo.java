@@ -3,7 +3,7 @@ public class subtitulo {
     Double tiempo;
 
      public subtitulo(String Texto, Double tiempo) {
-         this.texto = texto;
+         this.texto = Texto;
          this.tiempo = tiempo;
 
 
