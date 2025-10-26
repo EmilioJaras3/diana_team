@@ -1,15 +1,69 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.lang.runtime.SwitchBootstraps;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        ListaSub editor=new ListaSub();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+         System.out.println("Editor de Subtitulos");
+         System.out.println("1. Insertar subtitulo");
+         System.out.println("2. Eliminar subtitulo");
+         System.out.println("3. Mostrar subtitulos");
+         System.out.println("4. Salir");
+         System.out.println("Selecciona una opcion: ");
+
+         int opcion = sc.nextInt();
+
+        switch (opcion) {
+            case 1:
+         System.out.println("Escribe el subtitulo");
+         String texto = sc.next();
+
+         System.out.println("Escribe el tiempo, ej [10.5]");
+         double tiempo = sc.nextDouble();
+
+        editor.insertarSub( texto,tiempo);
+        break;
+
+        case 2:
+            System.out.println("Escribe el índice a eliminar, ej 1");
+            int indice = sc.nextInt();
+            editor.eliminarSub(indice);
+            break;
+            case 3:
+                editor.mostrarSub();
+                break;
+        default:
+            System.out.println("Opcion no valida");
         }
+
+        }
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
