@@ -1,5 +1,4 @@
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +7,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
-        while (true) {
+        while (true ) {
          System.out.println("Editor de Subtitulos");
          System.out.println("1. Insertar subtitulo");
          System.out.println("2. Eliminar subtitulo");
@@ -37,6 +36,9 @@ public class Main {
             case 3:
                 editor.mostrarSub();
                 break;
+
+            case 4:
+                System.exit(0);
         default:
             System.out.println("Opcion no valida");
         }
